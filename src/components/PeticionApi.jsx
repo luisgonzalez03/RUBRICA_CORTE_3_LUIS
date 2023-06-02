@@ -3,6 +3,7 @@ import { useState } from 'react'
 const PeticionApi = () => {
     const [personajes, setPersonajes] = useState([])
     const [paginacion, setPaginacion] = useState(1)
+    const [contador, setcontador] = useState(1)
 
     const traerPersonajes = async() =>{
         try{
@@ -33,7 +34,7 @@ const PeticionApi = () => {
         <button onClick={atras}>Atrás</button>
         {
             personajes.map((aux)=> (
-                <div key={aux.id}>
+                <div key={aux.name}>
                 <h4>{aux.name}</h4>
                 <img src={aux.img} alt={aux.name} />
             </div>
