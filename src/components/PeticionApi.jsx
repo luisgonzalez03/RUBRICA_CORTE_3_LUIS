@@ -28,8 +28,8 @@ const PeticionApi = () => {
   return (
     <div>
         <h1>DIGIMON APIS</h1>
-        <button onClick={traerPersonajes}>Buscar Digimon</button>
-        <button onClick={Adelante}>Adelante</button>
+        <button onClick={traerPersonajes}>traer personajes</button>
+        <button onClick={siguiente}>siguiente</button>
         <button onClick={atras}>Atrás</button>
         {
             personajes.map((aux)=> (
