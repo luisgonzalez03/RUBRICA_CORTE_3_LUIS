@@ -27,7 +27,7 @@ const PeticionApi = () => {
 
   return (
     <div>
-        <h1>APIS DIGIMON</h1>
+        <h1>DIGIMON APIS</h1>
         <button onClick={traerPersonajes}>Taer Personajes</button>
         <button onClick={siguiente}>Siguiente</button>
         <button onClick={atras}>Atrás</button>
